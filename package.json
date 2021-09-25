@@ -1,0 +1,20 @@
+{
+  "name": "solid-node-structure",
+  "version": "1.0.2",
+  "description": "create your files using S.O.L.I.D principles",
+  "keywords": [
+    "solid",
+    "nodeJS",
+    "express"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alphadirectory/solid-node-solid-node-structure.git"
+  },
+  "author": "Bismarck Alves",
+  "license": "ISC",
+  "bin": {
+    "solid-node-structure": "lib/bin.js",
+    "sns": "lib/bin.js"
+  }
+}
