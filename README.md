@@ -1,23 +1,14 @@
 ### About
-o solid node script é um biblioteca que tem o intuito de sugerir uma estrua baseada em principios do solid. Com ela você conseguirá gerar seus arquivos de forma rápida e objetiva
+solid node script is a library that is intended to suggest a structure based on solid principles. With it you'll be able to generate your files quickly and objectively 
 
 ### Installation
 
 `npm install solid-node-structure --save-dev`
 
-then, you need to create a ** solid.config.json ** file at the root of your project, telling the library where to start the useCases structure. example:
-
-src /
------- modules /
-README.md
-.gitignore
-package.json
-tsconfig.json
-    ** solid.config.json ** <==
-
+then, you need to create a ** solid.config.json ** file at the root of your project, telling the library where to start the useCases structure. Will need contains
 ```json
 {
-	"defaultPaths": "src / modules /"
+	"defaultPaths": "src/modules/"
 }
 ```
 
@@ -36,6 +27,29 @@ If you prefer, use the alias ** sns ** like this:
 	"name-of-your-script": "sns",
 }
 ```
-Now all you need to do is run:
 
-`yarn sns --module = myModule --usecase = myuseCase`
+## create a module 
+
+module=[moduleName]
+
+exemple:
+
+`npm sns module=feeds`
+## create a repositorie
+
+run repository=[moduleName]:[repositoryName] 
+
+exemple:
+
+`npm sns repository=feeds:points`
+
+## create a Model
+
+run model=[moduleName]:[modelName]
+exemple
+
+`npm sns model=feeds:points`
+
+## create an UseCase
+
+`npm sns usecase=feeds:points`
