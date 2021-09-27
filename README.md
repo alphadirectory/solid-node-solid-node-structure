@@ -14,17 +14,12 @@ then, you need to create a ** solid.config.json ** file at the root of your proj
 
 Then create a script in your package.json to start the solid-node structure from the terminal. Example:
 
-```json
-"scripts": {
-	"name-of-your-script": "solid node structure",
-}
-```
 
 If you prefer, use the alias ** sns ** like this:
 
 ```json
 "scripts": {
-	"name-of-your-script": "sns",
+	"sns": "sns",
 }
 ```
 
@@ -34,22 +29,22 @@ module=[moduleName]
 
 exemple:
 
-`npm sns module=feeds`
+`npm run sns module=feeds`
 ## create a repositorie
 
 run repository=[moduleName]:[repositoryName] 
 
 exemple:
 
-`npm sns repository=feeds:points`
+`npm run sns repository=feeds:points`
 
 ## create a Model
 
 run model=[moduleName]:[modelName]
 exemple
 
-`npm sns model=feeds:points`
+`npm run sns model=feeds:points`
 
 ## create an UseCase
 
-`npm sns usecase=feeds:points`
+`npm run sns usecase=feeds:points`
